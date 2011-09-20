@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app
+    xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+    version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd
+                        http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
+
+    <portlet>
+        <description>All about you and this session</description>
+        <portlet-name>InfoPortlet</portlet-name>
+        <display-name>InfoPortlet Portlet</display-name>
+
+        <portlet-class>com.sungardhe.demo.portlets.mavenrelease.InfoPortlet.InfoPortlet</portlet-class>
+
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>VIEW</portlet-mode>
+        </supports>
+
+        <supported-locale>en</supported-locale>
+
+        <portlet-info>
+            <title>Your Information</title>
+            <short-title>InfoPortlet</short-title>
+            <keywords>portlet,person,demo,sghe</keywords>
+        </portlet-info>
+        <portlet-preferences>
+        	<preference>
+						<name>displaytext</name>
+						<value>Hello, from your preferences</value>
+					</preference>
+				</portlet-preferences> 
+    </portlet>
+    <user-attribute>
+    	<name>user.name.nickName</name>
+    </user-attribute>
+    <user-attribute>
+    	<name>user.login.id</name>
+    </user-attribute>
+    <user-attribute>
+    	<name>user.name.full</name>
+    </user-attribute>
+    <user-attribute>
+    	<name>user.name.given</name>	
+    </user-attribute>
+    <user-attribute>
+    	<name>liferay.user.id</name>
+    </user-attribute>
+    <user-attribute>
+    	<name>liferay.company.id</name>
+    </user-attribute>
+    <user-attribute>
+    	<name>user.home-info.online.email</name>
+    </user-attribute>
+    <user-attribute>
+    	<name>user.name.family</name>
+    </user-attribute>
+</portlet-app>
